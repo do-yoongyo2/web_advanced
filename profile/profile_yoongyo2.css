@@ -1,0 +1,236 @@
+/* @font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "JalnanGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  max-width: 1228px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "JalnanGothic";
+}
+
+.navigation {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top-logo {
+  width: 97px;
+  height: 59px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-items li {
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.nav-items li a {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.top-sns {
+  padding-top: 10px;
+}
+
+.top-sns img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ----- 헤더 ----- */
+header {
+  padding-top: 220px;
+  padding-bottom: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #42446e;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 120.69% */
+  letter-spacing: -1px;
+}
+
+header h1 span {
+  /* 글씨에 그라데이션 주는 효과 */
+  background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+  background-clip: text;
+  color: transparent; /* 글자 색을 투명하게 */
+}
+
+header img {
+  width: 220px;
+  height: 220px;
+  border: 5px solid transparent;
+  border-radius: 70%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-image-slice: 1;
+  overflow: hidden;
+}
+
+/* ----- 기술 스택 섹션 ----- */
+.section-text {
+  padding-bottom: 130px;
+}
+.section-text h2 {
+  color: #42446e;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.section-text p {
+  color: #666;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tech-stack-div {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-stacks {
+  width: fit-content;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.tech-stacks2 {
+  width: fit-content;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.tech-stacks li {
+  text-align: center;
+}
+
+#tech-stack {
+  padding-bottom: 300px;
+}
+
+/* ----- 프로젝트 섹션 ----- */
+#project-section {
+  padding-bottom: 300px;
+}
+.project-items {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.project-item {
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.project-thumbnail {
+  width: 100%;
+  height: 256px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  background-image: url("https://source.unsplash.com/random/400×400");
+  background-position: center;
+  background-size: cover;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 256px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-content h4 {
+  color: #42446e;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.project-link a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+.project-desc {
+  color: #666;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+.project-tech-stack {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
