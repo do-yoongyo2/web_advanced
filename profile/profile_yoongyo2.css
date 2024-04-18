@@ -61,3 +61,42 @@ body {
   width: 30px;
   height: 30px;
 }
+
+/* ----- 헤더 ----- */
+header {
+  padding-top: 220px;
+  padding-bottom: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #42446e;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 120.69% */
+  letter-spacing: -1px;
+}
+
+header h1 span {
+  /* 글씨에 그라데이션 주는 효과 */
+  background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+  background-clip: text;
+  color: transparent; /* 글자 색을 투명하게 */
+}
+
+header img {
+  width: 220px;
+  height: 220px;
+  border: 5px solid transparent;
+  border-radius: 70%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-image-slice: 1;
+  overflow: hidden;
+}
