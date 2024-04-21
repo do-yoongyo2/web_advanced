@@ -1,0 +1,186 @@
+body {
+    background-color: #FDFBF5;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.border-box {
+    border: solid 1px #191919;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 48px;
+    /* flex-wrap: wrap; */
+}
+
+.top-nav {
+    padding: 48px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.top-logo {
+    width: 138.65px;
+    height: 50px;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-items li{
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #191919;
+  text-decoration: none;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+}
+.nav-items .nav-work a,
+.nav-items .nav-blog a {
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-lets {
+    width: 132px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #191919;
+    padding: 10px, 16px, 10px, 16px;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+}
+.nav-lets-li a {
+    color: #FDFBF5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hr1 {
+    width: auto;
+    border-bottom: solid 1px #191919;
+    margin: 33px 0px 47px 0px;
+}
+
+header {
+    /* Grid */
+    position: static;
+    /* 자동 레이아웃 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    width: 1784px;
+    height: 384px;
+}
+
+header p {
+    /* text/meta */
+    color: rgb(25, 25, 25);
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+header h1 {
+    /* heading/large */
+    color: rgb(25, 25, 25);
+    font-family: "Syne", sans-serif;
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.hr2 {
+    width: auto;
+    border-bottom: solid 1px #191919;
+    margin: 33px 0px 47px 0px;
+}
+
+.all-stories {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 64px;
+}
+
+.story {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: unset;
+}
+
+.all-stories-text {
+    /* Grid */
+    position: static;
+    width: 530px;
+    height: 753.75px;
+    /* 자동 레이아웃 */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    gap: 32px;
+    padding: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.all-stories-text h2 {
+  font-family: "Syne", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 64px;
+  text-transform: uppercase;
+  /* font-weight: <weight>; */
+  
+}
+
+.all-stories-text p {
+    /* text/meta */
+    color: rgb(25, 25, 25);
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* .all-stories-img {
+} */
+
+.all-stories-img img{
+    /* Image */
+    /* position: ; */
+    width: 100%;
+    height: 753.75px;
+    border-radius: 10px;
+}
